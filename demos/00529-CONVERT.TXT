@@ -1,0 +1,11 @@
+5 a(0)=10:a(1)=20:a(2)=30
+10 proc show("Hallo")
+20 proc show("-----")
+30 end
+100 def proc show(s$)
+105 local dim a(10)
+106 rem  a(0)=1:a(1)=2:a(2)=3
+110 print tab(60-len(s$));s$
+115 print a(0),a(1),a(2)
+116 print a#(0),a#(1),a#(2)
+120 endproc

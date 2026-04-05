@@ -1,0 +1,12 @@
+as68 -l -u basic_comments.s
+as68 -l -u blibf.s
+as68 -l -u data.s
+as68 -l -u editor.s
+as68 -l -u header.s
+
+link68 [u,s,l] basic.68k = header.o,basic_comments.o,blibf.o,editor.o,data.o
+relmod basic.68k basic.prg
+rm basic.68k
+basic
+
+

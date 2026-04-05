@@ -1,0 +1,11 @@
+# Preserve original CRLF line endings in legacy source and demo files
+src/**  -text
+demos/** -text
+tmp/BASIC_orig.S -text
+
+# Binary files
+*.BAS   binary
+*.PRG   binary
+*.O     binary
+*.pdf   binary
+*.zip   binary
